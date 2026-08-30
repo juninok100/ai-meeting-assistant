@@ -19,7 +19,7 @@ st.write("녹음파일을 올리면 AI가 자동으로 녹취하고 내용을 �
 @st.cache_resource
 def load_whisper_model():
     return WhisperModel(
-        "base",
+        "tiny",
         device="cpu",
         compute_type="int8"
     )
